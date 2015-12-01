@@ -1,7 +1,16 @@
 table {
   width: 980px;
-  align: center;
   border-collapse: collapse;
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: Arial;
+  text-align: center;
+}
+#container {
+  text-align: center;
+  margin-top: 20px;
 }
 
 td, th {
