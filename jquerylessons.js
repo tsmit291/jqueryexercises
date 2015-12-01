@@ -15,7 +15,7 @@ $("#button").click(function(){
       for (var i = 0; i < arr.length; i++) {
         var inside = (arr[i]["data"]["title"]);
         var description = arr[i]["data"]["public_description"];
-        var image = arr[i]["data"]["icon_img"];
+        var image = arr[i]["data"]["header_img"] ? arr[i]["data"]["header_img"] : "http://placehold.it/40x40";
         $(".firstClass").after("<tr><td>"+ inside +"</td>"+"<td>"+ description +"</td>"+"<td>" + "<img src=" + image + ">" + "</td></tr>");
       }
     });

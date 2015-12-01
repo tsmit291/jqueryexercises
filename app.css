@@ -1,4 +1,16 @@
-#container {
+table {
   width: 980px;
+  align: center;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 0.5rem;
+  text-align:center;
+}
+img {
+  height: 40px;
+  width: 40px;
   align: center;
 }
