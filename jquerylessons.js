@@ -9,13 +9,9 @@ $("#button").click(function(){
       dataType: "json"
     }).done(function(response){
       print(response)
-
     })
     // get something reddit and then come back. when you're done, hand it over if successful.
     // response is the object itself that you are getting back from the server.
-    // getter.fail(function(){
-    // });
-
     $("#removeButton").click(function(){
       var lastEntry = "";
       // $("td:contains('td')").html("");
@@ -24,9 +20,6 @@ $("#button").click(function(){
 
     })
 });
-
- 
-
  function print(responsible){
       var arr = responsible["data"]["children"]
       var items = responsible["inside","description","image"]
