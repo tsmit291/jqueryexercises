@@ -17,14 +17,14 @@
 
 function removeEvenOdd (stringy){
   var newArray = stringy.split("");
-  var newestArray = newArray.filter(function(m,i){
+  return newArray.filter(function(m,i){
     if (newArray.length % 2 === 0){
       return i % 2 !== 0;
     }
     else {
       return i % 2 === 0;
     }
-  })
-  return newestArray.join("");
+  }).join("");
+  // return newestArray.join("");
 }
 console.log(removeEvenOdd("californias"));
